@@ -9,7 +9,7 @@
   <title>Species at Risk</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    table {
+    .mangrove-table {
       width: 100%;
       border-collapse: collapse;
       background-color: #e6f2e6;
@@ -19,18 +19,18 @@
       overflow: hidden;
     }
 
-    th, td {
+    .mangrove-table th, .mangrove-table td {
       padding: 10px;
       text-align: left;
       border-bottom: 1px solid #ccc;
     }
 
-    th {
+    .mangrove-table th {
       background-color: #204620;
       color: white;
     }
 
-    tr:nth-child(even) {
+    .mangrove-table tr:nth-child(even) {
       background-color: #f0f5f0;
     }
 
@@ -112,12 +112,13 @@
           <p>This video from <a href="https://www.youtube.com/@AssociatedPress" style="font-weight: bold; color: #2e5d2e;">Associated Press</a> discusses the growing threat to Puerto Rico's mangrove forests from urban development.</p>
         </article>
       </div>
-      src="https://www.youtube.com/embed/LQpueEtfHpI?si=8sfLqgDE6c8uWXnP" title="YouTube video player" framebord<iframe width="560" height="315" er="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <!-- Fixed iframe code -->
+      <iframe src="https://www.youtube.com/embed/LQpueEtfHpI?si=8sfLqgDE6c8uWXnP" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
     <section>
       <h3>Species Affected by Mangrove Habitat Loss</h3>
-      <table>
+      <table class="mangrove-table">
         <thead>
           <tr>
             <th>Species</th>
